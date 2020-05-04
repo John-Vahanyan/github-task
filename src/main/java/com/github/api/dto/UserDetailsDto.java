@@ -2,6 +2,8 @@ package com.github.api.dto;
 
 import lombok.*;
 
+import java.util.Date;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -11,5 +13,5 @@ public class UserDetailsDto {
 
     private String name;
     private String email;
-    private String date;
+    private Date date;
 }

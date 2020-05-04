@@ -3,6 +3,8 @@ package com.github.api.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
+import java.util.Date;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -39,4 +41,15 @@ public class RepositoryDto {
     private String defaultBranch;
 
     private Integer score;
+
+    private String language;
+
+    @JsonProperty("stargazers_count")
+    private Integer stargazersCount;
+
+    @JsonProperty("created_at")
+    private Date createdAt;
+
+    @JsonProperty("updated_at")
+    private Date updatedAt;
 }
